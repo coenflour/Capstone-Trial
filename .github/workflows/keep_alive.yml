@@ -3,6 +3,7 @@ name: Keep Supabase Alive
 on:
   schedule:
     # Run at midnight (0 0 * *) on Sunday (0) and Friday(5)
+    # update twice a week since the inspection is every 7 business days
     - cron: '0 0 * * 0,5'
   workflow_dispatch:
 
